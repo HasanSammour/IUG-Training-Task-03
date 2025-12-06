@@ -22,8 +22,8 @@ Build a Laravel application demonstrating essential database operations using **
 
 ### **1. Clone & Install**
 ```bash
-git clone https://github.com/your-username/repo.git
-cd repo
+git clone https://github.com/HasanSammour/IUG-Training-Task-03.git
+cd IUG-Training-Task-03
 composer install
 ```
 
