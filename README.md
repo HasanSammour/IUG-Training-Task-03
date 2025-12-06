@@ -37,7 +37,7 @@ Edit `.env` (XAMPP defaults):
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=task_03_db
+DB_DATABASE=task_03
 DB_USERNAME=root
 DB_PASSWORD=
 ```
