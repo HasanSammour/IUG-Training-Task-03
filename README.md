@@ -17,42 +17,48 @@ Build a Laravel application demonstrating essential database operations using **
 
 ---
 
-## 🚀 How to Run the Application
+## 🚀 How to Install & Run the Application
+## 🔧 Setup for XAMPP Users
 
-### **1️⃣ Create Model and Migration**
-
+### **1. Clone & Install**
 ```bash
-php artisan make:model Product -m
+git clone https://github.com/your-username/repo.git
+cd repo
+composer install
 ```
 
-### **2️⃣ Run Migration to Create Table**
-
+### **2. Configure**
 ```bash
+cp .env.example .env
+```
+
+Edit `.env` (XAMPP defaults):
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=task_03_db
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+### **3. Initialize Database**
+```bash
+php artisan key:generate
+# Make sure XAMPP MySQL is running!
 php artisan migrate
-```
-
-### **3️⃣ Create Seeder for Dummy Data**
-
-```bash
-php artisan make:seeder ProductSeeder
-```
-
-### **4️⃣ Run Seeder to Insert Data**
-
-```bash
 php artisan db:seed --class=ProductSeeder
 ```
 
-### **5️⃣ Start Server**
-
+### **4. Run Application**
 ```bash
 php artisan serve
 ```
 
-### **6️⃣ View the Application**
-
-* **Home Page:** `http://localhost:8000/`
-* **Products Page:** `http://localhost:8000/products`
+## 🌐 Access URLs
+- **Home**: `http://localhost:8000/`
+- **Products**: `http://localhost:8000/products`
+- **phpMyAdmin**: `http://localhost/phpmyadmin`
 
 ---
 
