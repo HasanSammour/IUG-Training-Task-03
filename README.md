@@ -30,6 +30,7 @@ composer install
 ### **2. Configure**
 ```bash
 cp .env.example .env
+php artisan key:generate
 ```
 
 Edit `.env` (XAMPP defaults):
@@ -44,7 +45,6 @@ DB_PASSWORD=
 
 ### **3. Initialize Database**
 ```bash
-php artisan key:generate
 # Make sure XAMPP MySQL is running!
 php artisan migrate
 php artisan db:seed --class=ProductSeeder
