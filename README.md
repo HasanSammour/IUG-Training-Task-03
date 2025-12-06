@@ -43,7 +43,7 @@ php artisan make:seeder ProductSeeder
 php artisan db:seed --class=ProductSeeder
 ```
 
-### **5️⃣ Start Development Server**
+### **5️⃣ Start Server**
 
 ```bash
 php artisan serve
@@ -106,7 +106,7 @@ Product::count()
 products
 ├── id           (primary key, auto-increment)
 ├── name         (string)
-├── price        (decimal:8,2)
+├── price        (decimal:6,2)
 ├── created_at   (timestamp)
 └── updated_at   (timestamp)
 ```
