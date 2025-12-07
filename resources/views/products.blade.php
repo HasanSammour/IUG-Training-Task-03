@@ -192,8 +192,8 @@
         </header>
 
         <div class="navigation">
-            <a href="/" class="nav-button">← Back to Task Solution</a>
-            <a href="/products" class="nav-button" style="background: #28a745;">🔄 Refresh Products</a>
+            <a href="{{ route("index") }}" class="nav-button">← Back to Task Solution</a>
+            <a href="{{ route("show") }}" class="nav-button" style="background: #28a745;">🔄 Refresh Products</a>
         </div>
 
         <div class="database-info">
@@ -244,7 +244,7 @@
         @endif
         
         <div class="navigation">
-            <a href="/" class="nav-button">🏠 Home - Task Solution</a>
+            <a href="{{ route("index") }}" class="nav-button">🏠 Home - Task Solution</a>
             <a href="https://github.com/HasanSammour/IUG-Training-Task-03" 
                target="_blank" 
                class="nav-button" 
