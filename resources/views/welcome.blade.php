@@ -474,7 +474,7 @@
         </div>
 
         <div class="button-container">
-            <a href="/products" class="btn-view-products">View Products Table</a>
+            <a href="{{ route("show") }}" class="btn-view-products">View Products Table</a>
         </div>
 
         <div class="github-link">
