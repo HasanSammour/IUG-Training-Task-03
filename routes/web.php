@@ -6,9 +6,9 @@ use Illuminate\Support\Facades\Route;
 // ! Additional Step: Create View to show all products
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('index');
 
 Route::get('/products', function () {
     $products = Product::all();
     return view('products', ['products' => $products]);
-});
+})->name('show');
